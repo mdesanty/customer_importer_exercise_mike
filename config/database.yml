@@ -1,0 +1,3 @@
+adapter: sqlite3
+database: customer_importer.sqlite3
+pool: 5
