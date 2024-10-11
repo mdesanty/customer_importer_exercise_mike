@@ -1,5 +1,8 @@
 require_relative File.join('.', 'customer_importer.rb')
 
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+
 task default: %w[run]
 
 task :run do
