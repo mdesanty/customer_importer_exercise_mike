@@ -5,8 +5,8 @@ RSpec::Core::RakeTask.new(:spec)
 
 task default: %w[run]
 
-task :run do
-  ruby 'lib/app.rb'
+task :run, [:date] do |t, args|
+  ruby "lib/app.rb #{args[:date]}"
 end
 
 namespace :db do
