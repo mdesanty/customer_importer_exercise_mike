@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require_relative '../customer_importer.rb'
+require 'irb'
+
+IRB.start
